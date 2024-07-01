@@ -1,0 +1,723 @@
+
+
+.header {
+    padding: 0;
+}
+.header .logo {
+    display: inline-block;
+    margin: 5px 0 5px 0;
+}
+.header .logo img {
+    max-width: 100%;
+    height: 75px;
+}
+.navbar-nav>li {
+    padding: 0 10px;
+}
+.dropdown {
+    position: relative;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(0,0,0,.9);
+}
+.navbar-nav>li>a:hover, .navbar-nav>li:hover>a, .navbar-nav>li.active>a {
+    border-bottom-color: #263bd6;
+}
+.navbar-nav>li>a {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 16px 0;
+    border-bottom: 2px solid #fff;
+}
+.navbar-nav li.postjob, .navbar-nav li.jobseeker {
+    padding: 0;
+}
+.navbar-nav li.postjob a.nav-link {
+    background: #263bd6;
+    color: #fff;
+    padding: 16px 15px;
+    border-bottom-color: #263bd6;
+    border-radius: 55px 0 0 55px;
+}
+.navbar-nav li.jobseeker a.nav-link {
+    background: #666;
+    color: #fff;
+    padding: 16px 15px;
+    border-bottom-color: #666;
+    border-radius: 0 55px 55px 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.5);
+}
+.navbar-nav>li.userbtn>a {
+    padding: 0;
+    border: none;
+    padding-top: 8px;
+}
+.navbar-nav>li.userbtn img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 3px;
+    max-width: 100%;
+}
+.navbar-toggler {
+    display: none;
+}
+
+@media (max-width: 992px){
+    .navbar-toggler {
+        display: block;
+        margin-bottom: 10px;
+    }
+.navbar-cstm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.searchwrap {
+  background: url(https://ableget.com/scnjob/assets/css/search-bg.jpg) no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+.searchwrap h3 {
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+}
+.searchwrap h3 span {
+  color: #17d27c;
+}
+.searchwrap p {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+}
+.searchbar {
+  margin-top: 40px;
+  background: #fff;
+  border-radius: 60px;
+  padding: 10px 15px;
+  border: 5px solid #ddd;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.searchwrap p {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+.searchbar {
+  margin-top: 40px;
+  background: #fff;
+  border-radius: 60px;
+  padding: 10px 15px;
+  border: 5px solid #ddd;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.searchbar .form-control {
+  height: auto;
+  border-radius: 0;
+  padding: 13px 15px;
+  border: none;
+  font-size: 18px;
+}
+.searchbar .form-control:focus {
+  box-shadow: none;
+}
+.searchbar select.form-control, .searchblack select.form-control {
+    padding: 12px 15px 13px 15px;
+    appearance: auto;
+    border-left: 1px solid #ddd;
+}
+.nice-select {
+    -webkit-tap-highlight-color: transparent;
+    background-color: #fff;
+    border-radius: 5px;
+    border: solid 1px #e8e8e8;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    height: 42px;
+    line-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 30px;
+    position: relative;
+    text-align: left !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+}
+.nice-select .list {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+    box-sizing: border-box;
+    margin-top: 4px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: scale(0.75) translateY(-21px);
+    -ms-transform: scale(0.75) translateY(-21px);
+    transform: scale(0.75) translateY(-21px);
+    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 9;
+}
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+    background-color: #f6f6f6;
+}
+.nice-select .option.selected {
+    font-weight: bold;
+}
+.nice-select.open .list {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+}
+.nice-select.open:after {
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+.nice-select .option {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+    min-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 29px;
+    text-align: left;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.nice-select:after {
+    border-bottom: 2px solid #999;
+    border-right: 2px solid #999;
+    content: '';
+    display: block;
+    height: 7px;
+    width: 7px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    -webkit-transform-origin: 66% 66%;
+    -ms-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.searchbar .btn {
+  background: #17d27c;
+  border-radius: 40px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 14px 20px;
+  width: 100%;
+}
+.getstarted {
+  text-align: center;
+  margin-top: 50px;
+}
+.getstarted a {
+  display: inline-block;
+  padding: 20px 35px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  margin: 10px 5px;
+}
+.getstarted a i {
+  margin-right: 10px;
+}
+.getstarted a:hover {
+  background: #17d27c;
+  text-decoration: none;
+}
+
+/* marquee Section CSS Start  */
+.greybg {
+    background: #f6f6f6;
+}
+.section {
+    padding: 50px 0;
+    overflow: hidden;
+}
+.titleTop {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.titleTop .subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    color: #888;
+}
+.titleTop h3 {
+    font-size: 48px;
+    font-weight: 500;
+    color: #000;
+}
+.titleTop h3 span {
+    color: #263bd6;
+    font-weight: 200;
+}
+
+
+
+.employerList {
+    list-style: none;
+}
+.employerList li img:hover {
+    border-color: #5e2dfa;
+}
+
+.employerList .marquee {
+    padding: 20px 0 20px 0;
+}
+.owl-carousel .marquee {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+}
+.owl-carousel .marquee-content {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    -moz-backface-visibility: hidden;
+}
+
+
+.marquee-content {
+    display: flex;
+    animation: scrolling 15s linear infinite;
+    justify-content: space-between;
+}
+
+.marquee-item {
+    flex: 0 0 8vw;
+    margin: 0 1vw;
+    /*   flex: 0 0 20vw; */
+    /*   margin: 0 2vw; */
+}
+
+  .marquee-item img {
+      display: block;
+      width: 100%;
+      /*   padding: 0 20px; */
+  }
+  
+  @keyframes scrolling {
+      0% { transform: translateX(100%); }
+      100% { transform: translatex(-100%); }
+    }
+    
+    /* marquee Section CSS End */
+
+
+/* How It Works Section CSS Start  */
+
+.howlist {
+    list-style: none;
+}
+.howlist li {
+    margin-top: 30px;
+    text-align: center;
+}
+.howlist li .iconcircle {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #78ceff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 90px;
+    margin-bottom: 15px;
+    display: inline-block;
+    background: #263bd6;
+}
+
+.howlist li h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+.howlist li p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #555;
+}
+.howlist li .iconcircle i {
+    font-size: 48px;
+    color: #fff;
+}
+.howlist li:nth-child(2) .iconcircle {
+    background: #6ACA00;
+    border-color: #83ec0f;
+}
+.howlist li:last-child .iconcircle {
+    background: #f8a60c;
+    border-color: #ffc456;
+}
+
+
+
+
+/* How It Works Section CSS End */
+
+
+/* Latest Jobs Section CSS Start */
+
+.jobslist {
+    list-style: none;
+}
+.jobslist li {
+    margin-top: 30px;
+}
+.jobslist li .jobint {
+    background: #fff;
+    padding: 15px;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    min-height: 113px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    border-bottom: 2px solid #fff;
+}
+.jobslist li .jobint:hover {
+    box-shadow: 0 5px 30px rgb(0 0 0 / 10%);
+    border-color: #5e2dfa;
+}
+.jobslist li .jobint img {
+    max-width: 100%;
+}
+.jobslist li .col-md-7, .jobslist li .col-md-9 {
+    padding-left: 0;
+}
+
+.jobslist li h4 {
+    margin-bottom: 5px;
+}
+.jobslist li h4 a {
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+.jobslist li h4 a:hover {
+    color: #263bd6;
+    text-decoration: underline;
+}
+
+
+.jobslist li .company {
+    color: #999;
+    padding: 7px 0;
+}
+.jobslist li .company a {
+    color: #263bd6;
+    text-decoration: none;
+}
+.jobslist li .company a:hover {
+    text-decoration: underline;
+}
+.jobslist li .jobloc {
+    color: #000;
+}
+.fulltime {
+    background: #6ACA00;
+    color: #fff;
+    font-size: 13px;
+    display: inline-block;
+    padding: 4px 6px;
+}
+.freelance {
+    background: #ff0000;
+    color: #fff;
+    font-size: 13px;
+    display: inline-block;
+    padding: 4px 6px;
+}
+.partTime {
+    background: #f8a60c;
+    color: #fff;
+    font-size: 13px;
+    display: inline-block;
+    padding: 4px 6px;
+}
+.jobslist li .jobloc span {
+    color: #999;
+}
+
+
+
+.viewallbtn {
+    text-align: center;
+    margin-top: 40px;
+}
+.viewallbtn a {
+    display: inline-block;
+    background: #263bd6;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+.viewallbtn a:hover {
+    background: #333;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 767px){
+.jobslist li .col-md-7, .jobslist li .col-md-9 {
+    padding-left: 15px;
+    text-align: center;
+}
+.jobslist li h4 {
+    margin-top: 5px;
+}
+.jobslist li .jobint img{
+    width: 150px;
+    margin: auto;
+    display: flex;
+}
+}
+
+
+/* Latest Jobs Section CSS End */
+
+
+
+
+
+/* Footer Section CSS Start  */
+
+@media (min-width: 992px){
+.footer-parallax .footer-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+}
+.footer-section.footer-two {
+    background: linear-gradient(137deg, #11104d 0%, #060534 100%);
+}
+.footer-section {
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.footer-area {
+    position: relative;
+    padding-bottom: 60px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.footer-tittle h4{
+    margin-bottom: 44px;
+    padding-bottom: 16px;
+    font-weight: 700;
+    display: block;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 0;
+    letter-spacing: 0.5px;
+    word-break: break-all;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+.footer-tittle h4:after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    background: linear-gradient(-137deg, #94D13A 0%, #70BA02 100%);;
+}
+.footer-pera p {
+   text-align: center;
+    font-size: 16px;
+    color: white;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.footer-tittle ul li {
+    list-style: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+.footer-tittle ul li a{
+    color: white;
+    text-decoration: none;
+}
+.footer-tittle ul li a:hover {
+    text-decoration: underline;
+
+}
+
+.subscribe_form {
+    overflow: hidden;
+}
+.subscribe_form {
+    width: 100%;
+}
+.subscribe_form {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.form-icon {
+    margin-top: 10px;
+}
+.form-icon button {
+    padding: 10px 40px;
+    border-radius: 50px;
+    background-color: #70BA02 ;
+    color: white;
+    border: 1px solid white;
+    font-weight: 400;
+}
+.form-icon button:hover {
+    font-weight: bold;
+}
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal;
+}
+
+
+.footer-section .widget .search-form .search-submit {
+    right: 0;
+}
+.widget .search-form .search-submit {
+    width: auto;
+    height: 50px;
+}
+.widget .woocommerce-product-search button, .widget .search-form .search-submit {
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0 6px;
+    border-radius: 6px;
+    margin: auto;
+    right: 8px;
+}
+input[type="email"]{
+    border-radius: 10px;
+    display: block;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 500;
+    max-height: 50px;
+    padding: 0.813rem 1rem;
+    vertical-align: middle;
+    width: 100%;
+    background-color: #f5f6fa;
+    border: 1px solid #f5f6fa;
+    outline: none;
+    letter-spacing: 0.5px;
+    box-shadow: none;
+    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+}
+input[type="email"]:focus {
+    border-color: #94d13a;
+    background-color: #ffffff;
+}
+
+.footer-social a {
+    color: white;
+}
+.footer-social a i {
+    padding-right: 10px;
+}
+
+.jp-crnew p {
+    font-size: 14px !important;  
+}
+
+.jp-crnew ul {
+    font-size: 12px !important;
+    
+}
+
+
+
+
+/* Footer Section CSS End */

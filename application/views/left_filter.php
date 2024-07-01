@@ -1,0 +1,1 @@
+if(isset($sres)){	print_r($sres);}else{	echo "Empty";}

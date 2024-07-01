@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scn Jobs</title>
+    <link rel="icon" href="assets/images/logo/logo.png">
+    <!-- bootstrap cdn............................................. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome cnd................................................. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- aos cdn ...........................................................-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- custom cs........................................................... -->
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <!-- custom owl caruosel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+</head>
+
+<body onload="read_cookie();" class="authentication" style="background-image: url(./assets/images/login/auth_bg.jpg); height: 418px;" cz-shortcut-listen="true">
+        
+  <section class="login-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+
+                <div class="login-page ">
+                    <div class="jp_radio_list">
+                        <h3 class="from-heading"> Login</h3>
+                        <span class="aboutUs_infinite sote_infinite"></span>
+                        <div class="jp_radio text-end">
+
+                            <input type="radio" name="login_option" value="Seeker" class="r" id="seeker" checked="">
+                            <label for="seeker" id="login_option1">Seeker</label>
+                        </div>
+                        <div class="jp_radio text-start">
+                            <input type="radio" name="login_option" value="Recruiter" class="r" id="Recruiter">
+                            <label for="Recruiter" id="login_option2">recruiter</label>
+                        </div>
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label id="email_login">Your Email</label>
+                                    <input type="text" name="email" id="email" value="" placeholder="example@gmail.com" class="form-control" required>
+                               
+                                </div>
+                                <div class="col-md-12">
+                                    <label id="password_login">Password</label>
+                                    <input type="password" name="ps" id="ps" placeholder="Enter Password" class="form-control" value="" required>
+                               
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="checkbox" name="remember" value="Yes" id="remember">
+                                    <label for="remember">Remember me</label>
+                                </div>
+                                <div class="col-md-6 text-end">
+                                    <a href="#" class="forgot_password" id="forgot_password" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Forgot Password</a>
+                            
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="jp_input_wrapper text-center">
+                                        <button id="lbtn" type="submit" class=" login-btn">Login</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="not-have-account text-center">
+                                        <p><span id="register_msg">Don t Have An Account</span>
+                                            <a href="register.html"><span>Register</span></a>
+                                        </p>
+                                        <span class="jp_or">Or</span><br>
+                                        <a href="index.html" class="jp_backhome">Back To Home</a>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                         </form>
+                    </div>
+                </div>
+            
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+  </section>
+
+<!-- Forgot Password Modal -->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center" id="forgotPasswordModalLabel">Forgot Password</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="forgotEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="forgotEmail" placeholder="Enter email" required>
+                    </div>
+                    <div class="jp_radio text-end">
+
+                        <input type="radio" name="login_option" value="Seeker" class="r" id="seeker" checked="">
+                        <label for="seeker" id="forgot-option1">Seeker</label>
+                    </div>
+                    <div class="jp_radio text-start">
+                        <input type="radio" name="login_option" value="Recruiter" class="r" id="Recruiter">
+                        <label for="Recruiter" id="forgot-option2">recruiter</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Reset Password</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+
+
+    <!-- jquery ..................................................................... -->
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
+    <!-- bootstrap js............................................................... -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- aos animation js cdn ........................................................-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- custom JS -->
+    <script src="assets/js/custom.js"></script>
+
+
+</body>
+
+</html>

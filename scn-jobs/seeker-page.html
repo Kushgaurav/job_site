@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scn Jobs</title>
+    <link rel="icon" href="assets/images/logo/logo.png">
+    <!-- bootstrap cdn............................................. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome cnd................................................. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- aos cdn ...........................................................-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- custom cs........................................................... -->
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <!-- custom owl caruosel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <style>
+        .navbar-01 {
+            top: 0px;
+            background: #ffffff00 !important;
+            transition: all 0.5s;
+        }
+
+        .navbar-01 .navbar-nav .nav-item .nav-link {
+            color: #ffffff !important;
+        }
+
+        .navbar-scrolled .btn-00 .login {
+            color: #fff !important;
+        }
+
+        .navbar-scrolled {
+            top: 0;
+            background-color: #ffffff !important;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .navbar-scrolled a {
+            color: #000000 !important;
+            transition: all 0.5s;
+        }
+
+        .navbar-scrolled .navbar-nav .nav-item .nav-link {
+            color: #6b797c !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-01 navbar-expand-sm navbar-dark fixed-top">
+        <div class="container"> <a class="navbar-brand" href="#"><img src="assets/images/logo/logo.png" width="50%"
+                    alt=" logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+
+
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Employer </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="Company.html"><i
+                                        class="fa-regular fa-angles-right"></i>Create Company</a></li>
+                            <li><a class="dropdown-item" href="add-job.html"><i
+                                        class="fa-regular fa-angles-right"></i>Add Job</a></li>
+                            <li><a class="dropdown-item" href="manage-job.html">Manage Jobs</a></li>
+
+                        </ul>
+                       
+
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Jobs </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="Brose-Job.html">Browse Jobs</a></li>
+                            <li><a class="dropdown-item" href="Browse-Categories.html">Browse Categories</a></li>
+                        </ul>
+
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile-setting.html">Profile Setting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inner-contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+                <div class="btn-00">
+                    <a href="Brose-Job.html" class="login"><i class="fa-regular fa-user"></i>FIND JOBS</a>
+                </div>
+                <div class="btn-00">
+                    <a href="My-Applied-Job.html" class="login"><i class="fa-solid fa-briefcase"></i>My Applied Job</a>
+                </div>
+                <div class="btn-00">
+                    <a href="#" class="login"><i class="fa-light fa-arrow-up-left-from-circle"></i> Log out</a>
+                </div>
+                <div class="userbtn">
+                    <a href="profile-setting.html"><img
+                            src="https://scnjob.com/uploads/user_pro_pic/WhatsApp_Image_2024-02-22_at_17_54_05_0c755e1f.jpg"
+                            alt="" class="userlogo"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <div class="banner-text text-start text-lg-center">
+                        <h1>
+                            Search Between More Then <span>5,000 </span>Open Jobs.
+                        </h1>
+                        <p>Trending Jobs Keywords: <span class="trending_key"><a href="#">Web Designer</a></span> <span
+                                class="trending_key"><a href="#">Web Developer</a></span> <span class="trending_key"><a
+                                    href="#">IOS Developer</a></span> <span class="trending_key"><a href="#">Android
+                                    Developer</a></span></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 p-0">
+                    <div class="form-sec banner-text">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-4 ">
+                                    <input type="text" placeholder="Search Keywords..." required>
+                                </div>
+                                <div class="col-md-3">
+                                    <select name="stateid" style="border-left: 1px solid #ddd;" required>
+                                        <option value=" ">State</option>
+                                        <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+                                        <option value="ASSAM">ASSAM</option>
+                                        <option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+                                        <option value="BIHAR">BIHAR</option>
+                                        <option value="GUJRAT">GUJRAT</option>
+                                        <option value="HARYANA">HARYANA</option>
+                                        <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+                                        <option value="JAMMU &amp; KASHMIR">JAMMU &amp; KASHMIR</option>
+                                        <option value="KARNATAKA">KARNATAKA</option>
+                                        <option value="KERALA">KERALA</option>
+                                        <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+                                        <option value="MAHARASHTRA">MAHARASHTRA</option>
+                                        <option value="MANIPUR">MANIPUR</option>
+                                        <option value="MEGHALAYA">MEGHALAYA</option>
+                                        <option value="MIZORAM">MIZORAM</option>
+                                        <option value="NAGALAND">NAGALAND</option>
+                                        <option value="ORISSA">ORISSA</option>
+                                        <option value="PUNJAB">PUNJAB</option>
+                                        <option value="RAJASTHAN">RAJASTHAN</option>
+                                        <option value="SIKKIM">SIKKIM</option>
+                                        <option value="TAMIL NADU">TAMIL NADU</option>
+                                        <option value="TRIPURA">TRIPURA</option>
+                                        <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+                                        <option value="WEST BENGAL">WEST BENGAL</option>
+                                        <option value="DELHI">DELHI</option>
+                                        <option value="GOA">GOA</option>
+                                        <option value="PONDICHERY">PONDICHERY</option>
+                                        <option value="LAKSHDWEEP">LAKSHDWEEP</option>
+                                        <option value="DAMAN &amp; DIU">DAMAN &amp; DIU</option>
+                                        <option value="DADAR &amp; NAGAR HAVELI">DADAR &amp; NAGAR HAVELI</option>
+                                        <option value="CHANDIGARH">CHANDIGARH</option>
+                                        <option value="ANDAMAN &amp; NICOBAR">ANDAMAN &amp; NICOBAR</option>
+                                        <option value="UTTARAKHAND">UTTARAKHAND</option>
+                                        <option value="JHARKHAND">JHARKHAND</option>
+                                        <option value="CHATTISGARH">CHATTISGARH</option>
+                                        <option value="TELANGANA">TELANGANA</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <select style="border-left: 1px solid #ddd;" required>
+                                        <option data-display="Category">Category</option>
+                                        <option value="1">Software Developer</option>
+                                        <option value="2">Java Developer</option>
+                                        <option value="3">Software Engineer</option>
+                                        <option value="4">Web Developer</option>
+                                        <option value="5">PHP Developer</option>
+                                        <option value="6">Python Developer</option>
+                                        <option value="7">Front end Developer</option>
+                                        <option value="8">Associate Developer</option>
+                                        <option value="9">Back end Developer</option>
+                                        <option value="10">XML Developer</option>
+                                        <option value="11">.NET Developer</option>
+                                        <option value="12" disabled="">Marketting Developer</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <button type="submit" class="form-btn">Search</button>
+
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="jobs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="job-head text-center">
+                        <p>Here You Can See
+                        </p>
+                        <h4>Latest Jobs</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-6  col-sm-6 col-sm-12">
+                    <div class="job-box">
+                        <div class="fulltym full-type">
+                            <span>
+                                Full Time
+                            </span>
+                        </div>
+                        <div class=" icon-heart">
+                            <label class="toggler toggler-danger">
+                                <input type="checkbox" checked="">
+                                <i class="fa fa-heart"></i>
+                            </label>
+
+                        </div>
+                        <div class="job-icon text-center">
+                            <a href="#"> <img src="assets/images/jobs/box-logo.png" width="100%" alt=""></a>
+                        </div>
+                        <h5><a href="#">Product Redesign</a></h5>
+                        <p> Noida 63 ,Uttar Pradesh </p>
+
+                        <div class="job-btn"> <a href="job-detail.html" class="job-browse-btn">Apply Now</a> </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-6  col-sm-6 col-sm-12">
+                    <div class="job-box">
+                        <div class="fulltym full-type">
+                            <span>
+                                Full Time
+                            </span>
+                        </div>
+                        <div class=" icon-heart">
+                            <label class="toggler toggler-danger">
+                                <input type="checkbox">
+                                <i class="fa fa-heart"></i>
+                            </label>
+
+                        </div>
+                        <div class="job-icon text-center">
+                            <a href="#"> <img src="assets/images/jobs/logo-2.png" width="100%" alt=""></a>
+                        </div>
+                        <h5><a href="#">New Product Mockup</a></h5>
+                        <p> Noida 59 ,Uttar Pradesh </p>
+
+                        <div class="job-btn"> <a href="job-detail.html" class="job-browse-btn">Apply Now</a> </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-6  col-sm-6 col-sm-12">
+                    <div class="job-box">
+                        <div class="fulltym part-type">
+                            <span>
+                                Part Time
+                            </span>
+                        </div>
+                        <div class=" icon-heart">
+                            <label class="toggler toggler-danger">
+                                <input type="checkbox">
+                                <i class="fa fa-heart"></i>
+                            </label>
+
+                        </div>
+                        <div class="job-icon text-center">
+                            <a href="#"> <img src="assets/images/jobs/logo-3.png" width="100%" alt=""></a>
+                        </div>
+                        <h5><a href="#">Custom Php Developer</a></h5>
+                        <p> Noida 63 ,Uttar Pradesh </p>
+
+                        <div class="job-btn"> <a href="job-detail.html" class="job-browse-btn">Apply Now</a> </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-6  col-sm-6 col-sm-12">
+                    <div class="job-box">
+                        <div class="fulltym part-type">
+                            <span>
+                                Part Time
+                            </span>
+                        </div>
+                        <div class=" icon-heart">
+                            <label class="toggler toggler-danger">
+                                <input type="checkbox" checked="">
+                                <i class="fa fa-heart"></i>
+                            </label>
+
+                        </div>
+                        <div class="job-icon text-center">
+                            <a href="#"> <img src="assets/images/jobs/logo-5.png" width="100%" alt=""></a>
+                        </div>
+                        <h5><a href="#">Web Maintenence</a></h5>
+                        <p> Noida 63 ,Uttar Pradesh </p>
+
+                        <div class="job-btn"> <a href="job-detail.html" class="job-browse-btn">Apply Now</a> </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-6  col-sm-6 col-sm-12">
+                    <div class="job-box">
+                        <div class="fulltym internship-type">
+                            <span>
+                                internship
+                            </span>
+                        </div>
+                        <div class=" icon-heart">
+                            <label class="toggler toggler-danger">
+                                <input type="checkbox">
+                                <i class="fa fa-heart"></i>
+                            </label>
+
+                        </div>
+                        <div class="job-icon text-center">
+                            <a href="#"> <img src="assets/images/jobs/logo-4.png" width="100%" alt=""></a>
+                        </div>
+                        <h5><a href="#">Wordpress Developer</a></h5>
+                        <p> Noida 63 ,Uttar Pradesh </p>
+
+                        <div class="job-btn"> <a href="job-detail.html" class="job-browse-btn">Apply Now</a> </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-6  col-sm-6 col-sm-12">
+                    <div class="job-box">
+                        <div class="fulltym internship-type">
+                            <span>
+                                internship
+                            </span>
+                        </div>
+                        <div class=" icon-heart">
+                            <label class="toggler toggler-danger">
+                                <input type="checkbox" checked="">
+                                <i class="fa fa-heart"></i>
+                            </label>
+
+                        </div>
+                        <div class="job-icon text-center">
+                            <a href="#"> <img src="assets/images/jobs/logo-6.png" width="100%" alt=""></a>
+                        </div>
+                        <h5><a href="#">Photoshop Designer</a></h5>
+                        <p> Noida 63 ,Uttar Pradesh </p>
+
+                        <div class="job-btn"> <a href="job-detail.html" class="job-browse-btn">Apply Now</a> </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-6  col-sm-6 col-sm-12">
+                    <div class="job-box">
+                        <div class="fulltym full-type">
+                            <span>
+                                Full Time
+                            </span>
+                        </div>
+                        <div class=" icon-heart">
+                            <label class="toggler toggler-danger">
+                                <input type="checkbox">
+                                <i class="fa fa-heart"></i>
+                            </label>
+
+                        </div>
+                        <div class="job-icon text-center">
+                            <a href="#"> <img src="assets/images/jobs/logo-7.png" width="100%" alt=""></a>
+                        </div>
+                        <h5><a href="#">HTML5 & CSS3 Coder</a></h5>
+                        <p> Noida 63 ,Uttar Pradesh </p>
+
+                        <div class="job-btn"> <a href="job-detail.html" class="job-browse-btn">Apply Now</a> </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-6  col-sm-6 col-sm-12">
+                    <div class="job-box">
+                        <div class="fulltym full-type">
+                            <span>
+                                Full Time
+                            </span>
+                        </div>
+                        <div class=" icon-heart">
+                            <label class="toggler toggler-danger">
+                                <input type="checkbox" checked="">
+                                <i class="fa fa-heart"></i>
+                            </label>
+
+                        </div>
+                        <div class="job-icon text-center">
+                            <a href="#"> <img src="assets/images/jobs/logo-8.png" width="100%" alt=""></a>
+                        </div>
+                        <h5><a href="#">.Net Developer</a></h5>
+                        <p> Noida 63 ,Uttar Pradesh </p>
+
+                        <div class="job-btn"> <a href="job-detail.html" class="job-browse-btn">Apply Now</a> </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12  text-center mt-3">
+                    <a href="#" class=" theme-btn ">Browse All Jobs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cetegory">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="job-head text-center">
+                        <h4>Job Categories</h4>
+                        <p>A World of Career Opportunities Awaits: Explore Our Comprehensive Job Categories to Find Your
+                            Ideal Roles
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cate-box text-center">
+                        <div class="cate-icon text-center">
+                            <a href="#"> <i class="fa-solid fa-suitcase"></i></a>
+                        </div>
+                        <div class="cate-detail">
+                            <h4>Web & Software Dev</h4>
+                            <p>122 Jobs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cate-box text-center">
+                        <div class="cate-icon text-center">
+                            <a href="#"> <i class="fa-regular fa-pen-ruler"></i></a>
+                        </div>
+                        <div class="cate-detail">
+                            <h4>Data Science & Analitycs</h4>
+                            <p>155 Jobs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cate-box text-center">
+                        <div class="cate-icon text-center">
+                            <a href="#"> <i class="fa-sharp fa-solid fa-briefcase"></i></a>
+                        </div>
+                        <div class="cate-detail">
+                            <h4>Accounting & Consulting</h4>
+                            <p>50 Jobs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cate-box text-center">
+                        <div class="cate-icon text-center">
+                            <a href="#"> <i class="fa-sharp fa-thin fa-display"></i></a>
+                        </div>
+                        <div class="cate-detail">
+                            <h4>Education & Training</h4>
+                            <p>20 jobs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cate-box text-center">
+                        <div class="cate-icon text-center">
+                            <a href="#"> <i class="fa-light fa-briefcase"></i></a>
+                        </div>
+                        <div class="cate-detail">
+                            <h4>Digital Marketing</h4>
+                            <p>15 jobs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cate-box text-center">
+                        <div class="cate-icon text-center">
+                            <a href="#"> <i class="fa-sharp fa-thin fa-wine-glass"></i></a>
+                        </div>
+                        <div class="cate-detail">
+                            <h4>Graphics & Design</h4>
+                            <p>50 jobs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cate-box text-center">
+                        <div class="cate-icon text-center">
+                            <a href="#"> <i class="fa-regular fa-globe"></i></a>
+                        </div>
+                        <div class="cate-detail">
+                            <h4>Sales & Marketing</h4>
+                            <p> 28jobs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cate-box text-center">
+                        <div class="cate-icon text-center">
+                            <a href="#"><i class="fa-solid fa-pen-field"></i></a>
+                        </div>
+                        <div class="cate-detail">
+                            <h4>Writing & Translations</h4>
+                            <p> 28jobs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12  text-center mt-3">
+                    <a href="#" class=" theme-btn ">View All Categories</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="newsletter" style="background-image:url(assets/images/news/bg-new.png)">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 ">
+                    <div class="heading text-center">
+                        <h2>Subscribe Our Newsletter!</h2>
+                        <p>Stay Updated with the Latest News and Exclusive Offers - Subscribe to Our Newsletter Today!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 ">
+                    <div class="newselter-box">
+                        <form action="">
+                            <span><i class="fa-regular fa-envelope"></i>
+                                <input type="text" placeholder="Enter your Email..." required>
+                            </span>
+                            <button type="submit" class="news-btn btn">Subscribe</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-4">
+                    <a href="index.html"><img class="footer-logo" src="assets/images/logo/logo.png" width="20%"
+                            alt=""></a>
+                    <p>scnjobs is one of the Leading job portals along with easy access to enable both employer as
+                        well as employee with regards to that not only a jobseeker have right to get a relevant job but
+                        an employer must also have right to hire perfect candidate for his organization to enhance the
+                        business growth in small time of span...... <a href="about.html"
+                            style="color: rgb(185, 0, 0); text-align: center;">show more</a>
+                    </p>
+                    <div class="f-social-box">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook facebook-cl"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google google-plus-cl"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter twitter-cl"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram instagram-cl"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-8">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h4>Job Categories</h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Work from Home</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Internship Job</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Freelancer Job</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Part Time Job</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Full Time Job</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h4>Job Type</h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Create Account</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Career Counseling</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> My Oficiona</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> FAQ</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Report a Problem</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> My Account</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Support</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> How It Works</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Underwriting</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Employers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Jobs Listing</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> About Us</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Privacy Policy</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Term &amp; Condition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jquery ..................................................................... -->
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
+    <!-- bootstrap js............................................................... -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- aos animation js cdn ........................................................-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- custom JS -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

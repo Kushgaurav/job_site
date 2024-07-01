@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scn Jobs</title>
+    <link rel="icon" href="assets/images/logo/logo.png">
+    <!-- bootstrap cdn............................................. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome cnd................................................. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- aos cdn ...........................................................-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- custom cs........................................................... -->
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <!-- custom owl caruosel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <style>
+        .navbar-01 {
+            top: 0px;
+            background: #ffffff00 !important;
+            transition: all 0.5s;
+        }
+
+        .navbar-01 .navbar-nav .nav-item .nav-link {
+            color: #ffffff !important;
+        }
+
+        .navbar-scrolled .btn-00 .login {
+            color: #fff !important;
+        }
+
+        .navbar-scrolled {
+            top: 0;
+            background-color: #ffffff !important;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .navbar-scrolled a {
+            color: #000000 !important;
+            transition: all 0.5s;
+        }
+
+        .navbar-scrolled .navbar-nav .nav-item .nav-link {
+            color: #6b797c !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-01 navbar-expand-sm navbar-dark fixed-top">
+        <div class="container"> <a class="navbar-brand" href="#"><img src="assets/images/logo/logo.png" width="50%"
+                    alt=" logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="employer-page.html">My Jobs</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Employer </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="Company.html"><i
+                                        class="fa-regular fa-angles-right"></i>Create Company</a></li>
+                            <li><a class="dropdown-item" href="add-job.html"><i
+                                        class="fa-regular fa-angles-right"></i>Add Job</a></li>
+                             </ul>
+
+
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Jobs </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="Brose-Job.html">Browse Jobs</a></li>
+                            <li><a class="dropdown-item" href="Browse-Categories.html">Browse Categories</a></li>
+                        </ul>
+                     </li> -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="company-profile.html">Profile Setting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="employer-contant.html            ">Contact Us</a>
+                    </li>
+
+                </ul>
+                <div class="btn-00">
+                     <a href="data-search.html" class="login"><i class="fa-regular fa-user"></i>Data Search</a>
+                </div>
+                <div class="btn-00">
+                    <a href="manage-job.html" class="login"><i class="fa-solid fa-briefcase"></i>Active Jobs</a>
+                </div>
+                <div class="btn-00">
+                    <a href="#" class="login"><i class="fa-light fa-arrow-up-left-from-circle"></i> Log out</a>
+                </div>
+                <div class="userbtn">
+                    <a href="profile-setting.html"><img src="assets/images/jobs/box-logo.png" alt=""
+                            class="userlogo"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- ======================= Page Title ===================== -->
+    <div class="page-title">
+        <div class="container">
+            <div class="page-caption text-center">
+                <h2>Creat Company</h2>
+                <p><a href="index.html" title="Home">Home</a> <i class="fa-light fa-angles-right"></i> Creat Company</p>
+            </div>
+        </div>
+    </div>
+    <!-- ======================= End Page Title ===================== -->
+
+    <section class="about-company">
+        <div class="container">
+            <form class="c-form">
+                <!-- General Information -->
+                <div class="box">
+                    <div class="box-header">
+                        <h4>General Information</h4>
+                    </div>
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>Company Name</label>
+                                <input type="text" class="form-control" placeholder="Company Name" required>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>Company Tagline</label>
+                                <input type="text" class="form-control" placeholder="Company Tagline">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>Category</label>
+                                <select class="nice-select" >
+                                   <option data-display="Categories">Category</option>
+                                    <option value="1">Information Of Technology</option>
+                                    <option value="1">Hardware</option>
+                                    <option value="2">Machanical</option>
+                                </select>
+
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 m-clear">
+                                <label>Owner Name</label>
+                                <input type="text" class="form-control" placeholder="Owner Name">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>Company Logo</label>
+                                <div class="custom-file-upload">
+                                    <input type="file" id="file" name="myfiles[]" multiple="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>Established</label>
+                                <input type="date" placeholder="Established"  id="reservation-date" data-lang="en"
+                                     class="form-control" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company Address -->
+                <div class="box">
+                    <div class="box-header">
+                        <h4>Company Address</h4>
+                    </div>
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>Email</label>
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>Phone Number</label>
+                                <input type="text" class="form-control" placeholder="Phone Number">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>Landline</label>
+                                <input type="text" class="form-control" placeholder="Landline">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>Website Link</label>
+                                <input type="text" class="form-control" placeholder="Website Link">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>Address</label>
+                                <input type="text" class="form-control" placeholder="Address">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label for="state">State:</label>
+             <select id="state" class="nice-select " name="state">
+            <option value="">Select State</option>
+            <option value="andhra_pradesh">Andhra Pradesh</option>
+            <option value="arunachal_pradesh">Arunachal Pradesh</option>
+            <option value="assam">Assam</option>
+            <option value="bihar">Bihar</option>
+            <option value="chhattisgarh">Chhattisgarh</option>
+            <option value="goa">Goa</option>
+            <option value="gujarat">Gujarat</option>
+            <option value="haryana">Haryana</option>
+            <option value="himachal_pradesh">Himachal Pradesh</option>
+            <option value="jharkhand">Jharkhand</option>
+            <option value="karnataka">Karnataka</option>
+            <option value="kerala">Kerala</option>
+            <option value="madhya_pradesh">Madhya Pradesh</option>
+            <option value="maharashtra">Maharashtra</option>
+            <option value="manipur">Manipur</option>
+            <option value="meghalaya">Meghalaya</option>
+            <option value="mizoram">Mizoram</option>
+            <option value="nagaland">Nagaland</option>
+            <option value="odisha">Odisha</option>
+            <option value="punjab">Punjab</option>
+            <option value="rajasthan">Rajasthan</option>
+            <option value="sikkim">Sikkim</option>
+            <option value="tamil_nadu">Tamil Nadu</option>
+            <option value="telangana">Telangana</option>
+            <option value="tripura">Tripura</option>
+            <option value="uttar_pradesh">Uttar Pradesh</option>
+            <option value="uttarakhand">Uttarakhand</option>
+            <option value="west_bengal">West Bengal</option></select>
+                                
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label for="city">City:</label>
+                                <select class="nice-select " id="city" name="city">
+                                    <option value="">Select City</option>
+                                </select>
+                               
+                            </div>
+                            
+                            <div class="col-md-4 col-sm-6 col-xs-12 m-clear">
+                                <label>Zip Code</label>
+                                <input type="text" class="form-control" placeholder="Zip Code">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>Employees</label>
+                                <select class="wide nice-select">
+                                    <option data-display="Employees">0 - 10</option>
+                                    <option value="1" >10 - 50</option>
+                                    <option value="2">50 - 100</option>
+                                    <option value="3">100 - 500</option>
+                                    <option value="4" disabled="">500 - 1000</option>
+                                </select>
+                              
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 m-clear">
+                                <label>Working Time</label>
+                                <select class="wide nice-select">
+                                    <option data-display="Working Time">08:00AM To 5:00PM</option>
+                                    <option value="1">10:00AM To 4:00PM</option>
+                                    <option value="2">10:00AM To 6:00PM</option>
+                                    <option value="3" disabled="">11:00AM To 7:00PM</option>
+                                </select>
+                                
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 m-clear">
+                                <label>Address 2</label>
+                                <input type="text" class="form-control" placeholder="Address Two">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Accounts -->
+                <div class="box">
+                    <div class="box-header">
+                        <h4>Social Accounts</h4>
+                    </div>
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>Facebook</label>
+                                <input type="text" class="form-control" placeholder="https://www.facebook.com">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>Google +</label>
+                                <input type="text" class="form-control" placeholder="https://www.gmail.com">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>Twitter</label>
+                                <input type="text" class="form-control" placeholder="https://twitter.com">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>LinkedIn</label>
+                                <input type="text" class="form-control" placeholder="https://www.linkedin.com">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>Pinterest</label>
+                                <input type="text" class="form-control" placeholder="https://www.pinterest.com">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>Instagram</label>
+                                <input type="text" class="form-control" placeholder="http://instagram.com">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company Summery -->
+                <div class="box">
+                    <div class="box-header">
+                        <h4>Company Summery</h4>
+                    </div>
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <label>About Company</label>
+                              <textarea class="form-control  textarea" 
+                                    placeholder="About Company"></textarea> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-m theme-btn full-width">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+ 
+
+    <section class="newsletter" style="background-image:url(assets/images/news/bg-new.png)">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 ">
+                    <div class="heading text-center">
+                        <h2>Subscribe Our Newsletter!</h2>
+                        <p>Stay Updated with the Latest News and Exclusive Offers - Subscribe to Our Newsletter Today!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 ">
+                    <div class="newselter-box">
+                        <form action="">
+                            <span><i class="fa-regular fa-envelope"></i>
+                                <input type="text" placeholder="Enter your Email..." required>
+                            </span>
+                            <button type="submit" class="news-btn btn">Subscribe</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-4">
+                    <a href="index.html"><img class="footer-logo" src="assets/images/logo/logo.png" width="20%"
+                            alt=""></a>
+                    <p>scnjobs is one of the Leading job portals along with easy access to enable both employer as
+                        well as employee with regards to that not only a jobseeker have right to get a relevant job but
+                        an employer must also have right to hire perfect candidate for his organization to enhance the
+                        business growth in small time of span...... <a href="about.html" style="color: rgb(185, 0, 0); text-align: center;">show more</a>  
+                    </p>
+                    <div class="f-social-box">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook facebook-cl"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google google-plus-cl"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter twitter-cl"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram instagram-cl"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-8">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h4>Job Categories</h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Work from Home</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Internship Job</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Freelancer Job</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Part Time Job</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Full Time Job</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h4>Job Type</h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Create Account</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Career Counseling</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> My Oficiona</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> FAQ</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Report a Problem</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> My Account</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Support</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> How It Works</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Underwriting</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Employers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Jobs Listing</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> About Us</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Privacy Policy</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Term &amp; Condition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jquery ..................................................................... -->
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
+    <!-- bootstrap js............................................................... -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- aos animation js cdn ........................................................-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- custom JS -->
+    <script src="assets/js/custom.js"></script>
+
+    
+</body>
+
+</html>
